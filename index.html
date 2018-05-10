@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>yuli's home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./lib/css/my.css">
+    <link rel="shortcut icon" href="./lib/images/yuli.ico" >
+    <script type="text/javascript" src="./lib/js/my.js"></script>
+    <style type="text/css">
+        .menufloat{
+            width: 100px;
+            border: 1px solid #d8d8d8;
+        }
+        .menufloat li{
+            text-align: center;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- main_base  begin -->
+    <div class="main_base">
+        <img onclick="menukey()" id="menukey" class="menukey" src="./lib/images/menu.svg">
+        <div style='display:none' id="menu" class="menu">
+            <ul>
+                <li><a onclick='scrollPosition("Pastel-Reflections")' href="javascript:void(0)">浮光掠影</a></li>
+                <li><a onclick='scrollPosition("youthful-days")' href="javascript:void(0)">青春岁月</a></li>
+                <li><a onclick='scrollPosition("individual")' href="javascript:void(0)">个人简介</a></li>
+                <li><a onclick='scrollPosition("Visitors-testimonials")' href="javascript:void(0)">游客感言</a></li>
+                <li><a onclick='scrollPosition("youthful-days")' href="javascript:void(0)">个人爱好</a></li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <div id="headerimg" class="headerimg">
+            <div class="headerfont">
+                <h1>hello</h1>
+                <h1>I'm yuli</h1>
+                <h1>nice meet to you</h1>
+            </div>
+            <div id="down" class="down">
+                <a onclick='scrollPosition("Pastel-Reflections")' href="javascript:void(0)"><img src="./lib/images/down-huise.svg"></a>
+            </div>
+        </div>
+        <div id="Pastel-Reflections" class="sessions">
+            <div class="title">浮光掠影</div>
+            <div onclick='showDetiles("nianshao")' class="sessions-one"></div>
+            <div onclick='showDetiles("qiuxue")' class="sessions-one" ></div>
+            <div onclick='showDetiles("weilai")'  id="sessions-end" class="sessions-one"></div>
+            <div class="clear"></div>
+            <div class="sessions-one-title">壹：少年</div>
+            <div class="sessions-one-title" >贰：求学</div>
+            <div id="sessions-end" class="sessions-one-title">叁：未来</div>
+            <div class="clear"></div>
+        </div>
+         <div  id="youthful-days" class="sessions">
+            <div  class="title">青春岁月</div>
+            <div style="width:100%" class="sessions-one">
+                <p style="text-align: center;font-size: 30px;padding-top: 35px;color: white">青春岁月</p>
+                <p style="text-indent: 2em;text-align: left;font-size: 30px;padding-top: 15px;color: white"> 不为落叶伤感，为春雨掉泪;也不要满不在乎地挥退夏日的艳阳，让残冬的雪来装饰自己的面纱;岁月可使皮肤起皱，而失去热情，则使灵魂起皱！</p>
+                 <p style="text-align: right;font-size: 30px;padding-top: 25px;color: white">by 互联网</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="individual" class="sessions">
+            <div class="title">个人简介</div>
+            <div class="main_left">
+                <img id="touxiang" src="./lib/images/headerimg.jpg" alt="" />
+                <h1 id="name">ID：为英雄、永垂不朽</h1>
+                <h1 id="name">年纪：2015级信管</h1>
+                <h1 id="name">skills：吃吃喝喝</h1>
+                <h1 id="name">身高：布吉岛</h1>
+                <h1 id="name">体重：布吉岛</h1>
+            </div>
+            <div class="main_right">
+                <div class="right_title">
+                    个人简历：见如下pdf
+                </div>
+
+               <embed width="100%" height="715" src="./lib/1.pdf" > </embed> 
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    <div style="margin: auto;text-align: center;" class="title"><strong>个人简介</strong></div>
+        <div style="height: 400px;background: url(./lib/images/1.jpeg);" id="Visitors-testimonials" class="sessions">
+
+            <div style="width:100%" class="sessions">
+               <canvas style="width: 100%;height: 400px" id="canvas">您的浏览器不支持canvas赶紧去升级吧</canvas>
+               <button style="margin: auto;background: #d6d6d6; color: white;width: 50%;height: 45px;border-radius: 50px;border: none;margin-top: 10px;" onclick="liuyan()">留言</button>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+<br>
+<br>
+<br>
+        <div style="margin-top: 20px;" id="youthful-days" class="sessions">
+        
+            <div style="width:100%" class="sessions-one">
+              <div  class="title">爱好</div>
+              <li style="    font-size: 30px;
+    color: white;
+    text-align: left;">打游戏</li>
+              <li style="    font-size: 30px;
+    color: white;
+    text-align: left;">拍个片</li>
+              <li style="    font-size: 30px;
+    color: white;
+    text-align: left;">出去浪</li>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- main_base  end -->
+    <div id="floatDiv" class="floatDiv">
+        <!-- <img onclick="menufloatkey()" id="menukeyfloat" class="menukey" src="./lib/images/menublue.svg"> -->
+        <div id="menufloat">
+            <ul>
+                <li><a onclick='scrollPosition("Pastel-Reflections")' href="javascript:void(0)">浮光掠影</a></li>
+                <li><a onclick='scrollPosition("youthful-days")' href="javascript:void(0)">青春岁月</a></li>
+                <li><a onclick='scrollPosition("individual")' href="javascript:void(0)">个人简介</a></li>
+                <li><a onclick='scrollPosition("Visitors-testimonials")' href="javascript:void(0)">游客感言</a></li>
+                <li><a onclick='scrollPosition("youthful-days")' href="javascript:void(0)">个人爱好</a></li>
+                <li><a onclick='scrollPosition("headerimg");' href="javascript:void(0)">top</a></li>
+                <li style="display: none" class="clear"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- fullScreenShade -->
+    <div id="fullScreenShade" class="fullScreenShade"></div>
+    <!-- showsTable -->
+    <div id="showsTable" class="showsTable">
+        <div id="showsTable-top-box">
+            <img id="showsTableclose" onclick='closeDetiles("nianshao")' src="./lib/images/close (1).svg" alt="">
+            <h1 class="showsTitle">少年</h1>
+            <p class="showsSecondTitle">少年时候的我，有一把丈二长剑，然后做着走天涯的梦想！</p>
+            <hr class="showsHr">
+        </div>
+        <div>
+            <div style="float: left;width: 50%">
+                <img style="width: 60%;border:1px solid #d8d8d8;margin-left:20% " src="./lib/images/nianshao/1.jpg">
+                <p>sssssss</p>
+            </div>
+           <div style="float: left;width: 50%"> 
+                <img style="width: 60%;border:1px solid #d8d8d8;margin-left:20% " src="./lib/images/nianshao/2.jpg">
+                <p>sssssss</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="showsTabledaxue"  class="showsTable">
+        <div id="showsTable-top-box">
+            <img id="showsTableclose" onclick='closeDetiles("qiuxue")' src="./lib/images/close (1).svg" alt="">
+            <h1 class="showsTitle">求学</h1>
+            <p class="showsSecondTitle">独自背上行囊，朝着未来的方向前进！为英雄永垂不朽！</p>
+            <hr class="showsHr">
+        </div>
+        <div>
+           <iframe style="float: left;" frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=p0351ttvius&tiny=0&auto=0" allowfullscreen></iframe>
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/1.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/2.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/3.jpeg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/4.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/5.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/6.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/7.gif">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/8.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/9.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/10.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/11.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/12.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/13.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/14.jpg">
+           <img style="float: left;width: 200px" src="./lib/images/qiuxue/15.jpg">
+        </div>
+    </div>
+    <div id="showsTableweilai"  class="showsTable">
+        <div id="showsTable-top-box">
+            <img id="showsTableclose" onclick='closeDetiles("weilai")' src="./lib/images/close (1).svg" alt="">
+            <h1 class="showsTitle">未来</h1>
+            <p class="showsSecondTitle">梦想的天堂啊！是个什么模样？那塔顶鸟儿的翅膀！是否就是我原本的梦想？</p>
+            <hr class="showsHr">
+        </div>
+        <div>
+            <div style="width: 100%;height: 100%"><img style="width: 100%" src="./lib/images/weilai/1.jpg"></div>
+        </div>
+    </div>
+
+
+    <script>
+    window.addEventListener("scroll",function(e){
+    var floatDiv=document.getElementById('floatDiv');
+    var getScrollTop =document.documentElement.scrollTop||document.body.scrollTop;
+    console.log(getScrollTop);
+    //当滚动条大于屏幕高度时候
+    if (getScrollTop>winHeight) {
+        //显示nav
+        floatDiv.style.display="block"
+    }else{
+        //不显示nav
+        floatDiv.style.display="none"
+    }
+    });
+    </script>
+</body>
+   <script type="text/javascript">
+        window.onload = function() {
+            // var kuandu=1200;
+            // 加载自动高度js
+            autoImgheight();
+            //定位到最高处
+            scrollPosition("headerimg");
+
+                var canvas=document.getElementById('canvas');
+    var ctx=canvas.getContext("2d");
+    var width=600;
+    var height=400;
+    var colorArr=["yellow","pink","orange","red","green"];
+    var textArr=[
+        "托尔斯泰",
+        "我用双手成就你的梦想",
+        "犯我德邦者，虽远必诛！",
+        "陷阵之志，有死无生",
+        "即使敌众我寡，末将亦能万军从中取敌将首级！"
+    ]
+    canvas.width=width;
+    canvas.height=height;
+    var image=new Image();
+ 
+    ctx.font = "20px Courier New";
+    var numArrL=[80,100,5,300,500,430];//初始的X
+    var numArrT=[80,100,20,300,380,210];//初始的Y
+    setInterval(function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.save();
+    for(var j=0;j<textArr.length;j++){
+        numArrL[j]-=(j+1)*0.6;
+        ctx.fillStyle = colorArr[j]
+        ctx.fillText(textArr[j],numArrL[j],numArrT[j]);
+    }
+    for(var i=0;i<textArr.length;i++){
+        if(numArrL[i]<=-500){
+            numArrL[i]=canvas.width;
+        }
+    }
+    ctx.restore();
+    },30)
+ 
+        };
+
+    </script>
+</html>

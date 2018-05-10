@@ -1,0 +1,395 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+border-bottom: 1px dotted;
+cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+
+
+.clear{
+	clear: both;
+}
+
+.menu{
+	 position: relative;
+     display: inline-block;
+	float: right;
+	margin: 20px 20px 0 0;
+}
+.menu ul li{
+	line-height: 40px;
+	margin: auto;
+	text-align: center;
+	width: 100px;
+	list-style: none;
+	float: left;
+
+}
+.menu ul li a{
+		color: white
+}
+.sessions{
+	width: 1400px;
+	margin: 20px auto;
+	text-align: center;
+}
+.sessions .title{
+	margin-top: 35px;
+	font-weight: bold;
+}
+#sessions-end{
+	margin-right: 0px;	
+}
+
+.sessions-one{
+	margin-top: 30px;
+	margin-right: 4%;
+	width: 30%;
+	height: 300px;
+	float: left;
+	background: url(../images/bg_4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border: 1px solid #dd8800;
+}
+
+.sessions-one-title{
+	margin-top: 5px;
+	margin-right: 4%;
+	width: 30%;
+	float: left;
+}
+.title{
+    padding: 20px;
+}
+.menukey{
+    margin: 20px 20px 0 0 ;
+    float: right;
+    width: 40px;
+}
+.headerimg{
+    background: url(../images/bg_4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.headerfont{
+    position: relative;
+    top: 40%;
+    width: 300px;
+    line-height: 50px;
+    border: 1px solid white;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.down{
+    position: relative;
+    top: 70%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.down img{
+    width: 100%
+}
+
+/*jianli*/
+.main_left{
+    width: 25%;
+    background:#254665; 
+    float: left;
+    height: 800px;
+
+}
+.main_right{
+    width: 75%;
+    float: right;
+    height: 800px;
+    background: #ffffff;
+    text-align:left;
+}
+#touxiang{
+    width: 100px;
+    height: 100px;
+    margin: 30px 0;
+    text-align: center;
+    border-radius: 50%;
+
+}
+#name{
+    color: white;
+    font-size: 20px;
+}
+.clear{
+    clear: both;
+}
+.main_right_title{
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15PX;
+}
+.right_title{
+    margin-top: 30px;
+    font-size: 25px;
+    color:#dd4d41;
+    padding-bottom: 30px;
+    font-weight: bold;
+    padding-left: 15PX;
+
+}
+.main_right_title:before
+{ 
+content:"●";
+}
+.main_right_list{
+    padding:15px 0 0 15px;
+}
+.time{
+    float: left;
+    width: 40%;
+}
+.where{
+    float: left;
+    width: 30%;
+
+}
+.honor{
+    float: left;
+    width: 30%
+}
+/*showstable*/
+
+.showsTable{
+	position: fixed;
+	z-index: 3;
+	background: #121a2a;
+	top: 20px;
+	left: 50px;
+	right: 50px;
+	bottom: 50px;
+    background-color: rgba(18,26,42,0.7);
+/*	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;*/
+	display: none;
+}
+/*ie*/
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+  /*.demo p{
+    position: relative; 设置子元素为相对定位，可让子元素不继承Alpha值 
+  } */
+    .showsTable{
+        position: fixed;
+        z-index: 3;
+        background: #121a2a;
+        top: 20px;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        filter:Alpha(opacity=70);
+        position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+        display: none;
+    }
+}
+#showsTableclose{
+	position: relative;
+	top: 0;
+	right: 0px;
+	float: right;
+	width: 50px;
+}
+.fullScreenShade{
+	display: none;
+	position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.floatDiv{
+	position: fixed;
+	top: 30%;
+	right: 20px;
+	display:none;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    width: 80px
+}
+.floatDiv li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom:1px solid #d8d8d8; 
+}
+.floatDiv li a{
+    color: #d8d8d8;
+    font-size: 10px;
+}
+.floatDiv li:hover{
+    background: #ff0000;
+}
+.floatDiv li:hover  > a{
+    color: white;
+    font-size: 12px;
+}
+
+.showsTitle{
+    color: white;
+    margin: 15px 0 5px 20px;
+    text-align: left;
+    border-bottom: 4px  solid white;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+.showsSecondTitle{
+    color: white;
+    margin:7px 0 0 20px;
+    text-align: left;
+    font-size: 15px; 
+}
+.showsHr{
+    background: #1d953f;
+    border: none;
+    height: 4px;
+    margin-top: 10px;
+}
+
+
+/*轮播图——beg*/
+ #container {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    border: 3px solid #333;
+    overflow: hidden;
+}
+/*列表 宽度为所以图片的宽度*/
+#list {
+    position: absolute;
+    z-index: 1;
+    width: 8400px;
+    height: 800px;
+}
+/*图片容器宽高*/
+#list img {
+    float: left;
+    width: 1200px;
+    height: 800px;
+}
+/*小点按钮*/
+#buttons {
+    position: absolute;
+    left: 250px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+/*按钮上面的字体 cursor: pointer; 鼠标点上去可点击*/
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: orangered;
+}
+
+.arrow {
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    background-color: RGBA(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+/*轮播图——end*/
